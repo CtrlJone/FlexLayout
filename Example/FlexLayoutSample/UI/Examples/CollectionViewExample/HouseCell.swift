@@ -79,7 +79,7 @@ class HouseCell: UICollectionViewCell {
     }
     
     override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
-        let size = sizeThatFits(bounds.size)
+        let size = sizeThatFits(layoutAttributes.size)
         layoutAttributes.size = size
         return layoutAttributes
     }
